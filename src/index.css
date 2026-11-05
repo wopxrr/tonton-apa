@@ -1,0 +1,39 @@
+/* CSS RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COLOR PALETTE */
+
+:root {
+  --bg-primary: #0B0D10;
+  --bg-secondary: #171A20;
+  --bg-card: #1E222A;
+
+  --accent: #E6B85C;
+
+  --text-primary: #F4F1EA;
+  --text-secondary: #A0A3AA;
+
+  --border-color: #343840;
+
+}
+
+/* GLOBAL STYLING */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+/* ROOT */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

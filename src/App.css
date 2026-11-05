@@ -1,0 +1,203 @@
+/* APP CONTAINER */
+
+.app {
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 28px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  width: min(900px, calc(100% - 40px));
+  min-height: calc(100vh - 90px);
+  margin: 0 auto;
+  padding: 70px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero-section h1 {
+  color: var(--text-primary);
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin: 20px 0;
+}
+
+.hero-description {
+  color: var(--text-secondary);
+  font-size: 17px;
+}
+
+/* MOVIE PICKER PANEL */
+
+.picker-panel {
+  width: 100%;
+  max-width: 480px;
+
+  margin-top: 36px;
+  padding: 32px;
+
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 16p;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* MODE OPTIONS */
+
+.mode-options {
+  display: flex;
+  gap: 12px;
+}
+
+.mode-button {
+  padding: 10px 22px;
+
+  background-color: transparent;
+  color: var(--text-secondary);
+
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.mode-button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.mode-button.active {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  border-color: var(--accent);
+}
+
+/* PICK BUTTON */
+
+.pick-button {
+  width: 100%;
+  padding: 16px;
+
+  background-color: var(--accent);
+  color: var(--bg-primary);
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.pick-button:hover {
+  background-color: #F2CC7B;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(230, 184, 92, 0.2);
+}
+
+.pick-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+
+  .navbar {
+    width: calc(100% - 32px);
+    padding: 22px 0;
+  }
+
+  .brand {
+    font-size: 15px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .hero-section h1 {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .picker-panel {
+    padding: 24px 16px;
+  }
+
+  .mode-button {
+    padding: 10px 16px;
+  }
+
+  .pick-button {
+    font-size: 14px;
+  }
+
+}
